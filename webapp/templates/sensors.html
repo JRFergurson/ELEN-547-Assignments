@@ -1,0 +1,56 @@
+<html>
+
+    <head>
+
+        <link rel="stylesheet" href='/static/style.css' />
+
+        <style>                                                     <!--- Make a table for easier reading --->
+                                                                    <!--- References taken from w3schools.com HTML section --->
+            table, th, td {
+                border: 1px solid black;
+                border-collapse: collapse;
+                padding: 10px;
+            }
+            
+            table.center {
+                margin-left: auto;
+                margin-right: auto;
+                margin-top: 15%;
+            }
+
+        </style>
+
+        <meta http-equiv = "refresh" content = "10">                <!--- Refresh the page for the specified number of seconds, adjust the content value to change --->   
+
+    </head>
+
+    <body>
+
+        <h1>My website</h1>                                         <!--- This is a heading --->
+
+            <a href="/hello/Jordan">Hi Jordan</a>                   <!--- This is an attribute --->
+
+            <br />                                                  <!--- Line break --->
+
+        <table class = "center">                                    <!--- A table listing temp and humidity --->
+
+            <tr>
+                <th>Parameter</th>
+                <th>Value</th>
+            </tr>
+
+            <tr>
+                <td>Temperature (&deg;C)</td>
+                <td>{{temp}}</td>
+            </tr>
+            
+            <tr>
+                <td>Humidity (%RH)</td>
+                <td>{{humidity}}</td>
+            </tr>
+            
+        </table>
+
+    </body>
+
+</html>
